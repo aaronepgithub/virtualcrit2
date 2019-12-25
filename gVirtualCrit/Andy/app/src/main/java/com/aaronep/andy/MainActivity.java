@@ -511,7 +511,8 @@ public class MainActivity extends AppCompatActivity  implements TextToSpeech.OnI
 
                       String roundPaceString = calcPace(currentRoundSpeed);
                       String roundIndexString = "";
-                      String toSpeak1 = "Round complete, your speed was " + String.format(Locale.US, "%.1f Miles Per Hour.", currentRoundSpeed);
+//                      String toSpeak1 = "Round complete, your speed was " + String.format(Locale.US, "%.1f Miles Per Hour.", currentRoundSpeed);
+                      String toSpeak1 = String.format(Locale.US, "%.1f Miles Per Hour.", currentRoundSpeed);
                       String toSpeak1b = "A Pace of " + roundPaceString + ".  ";
                       String toSpeak2 = ".  Your best is " + String.format(Locale.US, "%.1f", bestRoundSpeed) + " .  ";
                       String toSpeak1c = "";
@@ -547,7 +548,8 @@ public class MainActivity extends AppCompatActivity  implements TextToSpeech.OnI
                       //CREATE TIMELINE POST
                       createTimeline("ROUND COMPLETE\n" + String.format(Locale.US, "%.1f MPH", currentRoundSpeed)  + " \n" + String.format(Locale.US, "%.1f %% MAX", tim.getRoundScore())  + " \n" + "  YOUR BEST: " + String.format(Locale.US, "%.1f MPH", bestRoundSpeed) + "\n" + roundIndexString, "");
 
-                      speakText(this, toSpeak1 + toSpeak1b + toSpeak1c + toSpeak1d);
+//                      speakText(this, toSpeak1 + toSpeak1b + toSpeak1c + toSpeak1d);
+                      speakText(this, toSpeak1 + ',' +  toSpeak1c);
 
                       final double finalBestRoundSpeed = bestRoundSpeed;
                       runOnUiThread(new Runnable() {
@@ -593,7 +595,7 @@ public class MainActivity extends AppCompatActivity  implements TextToSpeech.OnI
 
                       String tempSpeak = "The speed leader is " + stLeaderName + ", The leading score is from " + stLeaderNameScore;
                       if (Objects.equals(tempSpeak, speakLeaderNames)) {return;}
-                      speakText(this, "The speed leader is " + stLeaderName + ", The leading score is from " + stLeaderNameScore);
+//                      speakText(this, "The speed leader is " + stLeaderName + ", The leading score is from " + stLeaderNameScore);
                       speakLeaderNames = tempSpeak;
                   }
 
@@ -664,9 +666,9 @@ public class MainActivity extends AppCompatActivity  implements TextToSpeech.OnI
                       String toSpeakMile1 = "Speed for the last mile was " + stLastMileMph;
                       String toSpeakMile2 = "Your fastest is, " + stBestMileMph;
                       String toSpeakMile3 = ",  A Pace of " + calcPace(finalBestMileMPH);
-                      //speakText(this, toSpeakMile1 + toSpeakMile2 + mileRankingString);
 
-                      speakText(this, toSpeakMile1 + toSpeakMile3 + toSpeakMile4);
+
+//                      speakText(this, toSpeakMile1 + toSpeakMile3 + toSpeakMile4);
 
 
                       //readMileInfo = false;
@@ -675,92 +677,10 @@ public class MainActivity extends AppCompatActivity  implements TextToSpeech.OnI
                   }
 
 
-
-//                  if (finalLastMileSpeed != lastMileTester) {
-//                      //Log.i(TAG, "END OF MILE, REGARDLESS OF GEO OR BT");
-//                      //Log.i(TAG, "Your last miles's speed was " + String.format(Locale.US, "%.1f Miles Per Hour.", finalLastMileSpeed));
-//                      //Log.i(TAG, "Your best is " + String.format(Locale.US, "%.1f", finalBestMileMPH));
-
-//                      doubleValuesMiles.add(finalLastMileSpeed);
-
-//                      String mileRankingString = "";
-//                      int positionM = -1;
-//                      positionM = doubleValuesMiles.indexOf(finalLastMileSpeed);
-//                      if (positionM == -1) {
-//                          Log.e(TAG, "Object not found in List");
-//                      } else {
-//                          positionM += 1;
-//                          //Log.i(TAG, "LAST MILE RANKED " + positionM + " OUT OF " + doubleValuesMiles.size());
-//                          mileRankingString = "LAST MILE RANKED " + positionM + " OUT OF " + doubleValuesMiles.size();
-//                      }
-
-
-
-                      //lastMileTester = finalLastMileSpeed;
-//                      String toSpeakMile1 = "Your last miles's speed was " + String.format(Locale.US, "%.1f Miles Per Hour.", finalLastMileSpeed);
-//                      String toSpeakMile2 = ".  Your best is " + String.format(Locale.US, "%.1f", finalBestMileMPH);
-//                      speakText(this, toSpeakMile1 + toSpeakMile2 + mileRankingString);
-//                      readMileInfo = false;
-//                      createTimeline("MILE COMPLETE\n" + String.format(Locale.US, "%.1f MPH\n  ", finalLastMileSpeed) + "  BEST MILE: " + String.format(Locale.US, "%.1f MPH", finalBestMileMPH) + "\n" + mileRankingString, "");
-
-//                  }
-
-//                  if (readMileInfo) {
-//                      String toSpeakMile1 = "Your last miles's speed was " + String.format(Locale.US, "%.1f Miles Per Hour.", finalLastMileSpeed);
-//                      String toSpeakMile2 = ".  Your best is " + String.format(Locale.US, "%.1f", finalBestMileMPH);
-//                      speakText(this, toSpeakMile1 + toSpeakMile2);
-//                      readMileInfo = false;
-//                      //createTimeline("MILE COMPLETE\n" + String.format(Locale.US, "%.1f MPH\n  ", finalLastMileSpeed) + "  BEST MILE: " + String.format(Locale.US, "%.1f MPH", finalBestMileMPH), "");
-//                  }
-
-
-
-//                  runOnUiThread(new Runnable() {
-//                      @Override
-//                      public void run() {
-//                      TextView t = findViewById(R.id.rtText6a);
-//                          t.setText(String.format("%.1f MPH", finalCurrentMileSpeed));
-//
-//                          TextView t1 = findViewById(R.id.rtText6b);
-//                          t1.setText(String.format("%.1f MPH", finalLastMileSpeed));
-//
-//                          TextView t2 = findViewById(R.id.rtText6c);
-//                          t2.setText(String.format("%.1f MPH", bestMileMPH));
-//
-//                          //MILE PACE
-//                          TextView tt = findViewById(R.id.rtText6aa);
-//                          tt.setText(calcPace(finalCurrentMileSpeed));
-//
-//                          TextView tt1 = findViewById(R.id.rtText6bb);
-//                          tt1.setText(calcPace(finalLastMileSpeed));
-//
-//                          TextView tt2 = findViewById(R.id.rtText6cc);
-//                          tt2.setText(calcPace(bestMileMPH));
-//
-//
-//                          TextView t37 = findViewById(R.id.rtText7a);
-//                          t37.setText(String.format("%.1f MPH", currentRoundSpeed));
-//
-//
-//                      }
-//                      });
-
-
-
-                  //final double finalBestRoundSpeed = bestRoundSpeed;
                   runOnUiThread(new Runnable() {
                       @Override
                       public void run() {
 
-
-//                          TextView tr = findViewById(R.id.rtStatus);
-//                          tr.setText(String.format("ROUND COMPLETED: %d", currentRound - 1));
-
-//                          TextView t7b = findViewById(R.id.rtText7b);
-//                          t7b.setText(String.format("%.1f MPH", currentRoundSpeed));
-//
-//                          TextView t7c = findViewById(R.id.rtText7c);
-//                          t7c.setText(String.format("%.1f MPH", finalBestRoundSpeed));
 
                           TextView t = findViewById(R.id.rtText6a);
                           t.setText(String.format(Locale.US,"%.1f MPH", finalCurrentMileSpeed));
