@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58101F09201E0F7900733F15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58101F08201E0F7900733F15 /* AppDelegate.swift */; };
+		58101F10201E0F7900733F15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58101F0E201E0F7900733F15 /* Main.storyboard */; };
+		58101F12201E0F7900733F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58101F11201E0F7900733F15 /* Assets.xcassets */; };
+		58101F15201E0F7900733F15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58101F13201E0F7900733F15 /* LaunchScreen.storyboard */; };
+		58101F1F201E10DA00733F15 /* Bluetooth_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58101F1E201E10DA00733F15 /* Bluetooth_VC.swift */; };
+		58101F25201E14AC00733F15 /* Starter_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58101F24201E14AC00733F15 /* Starter_VC.swift */; };
+		58216CF120250B8F00DDE028 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58216CF020250B8F00DDE028 /* GoogleService-Info.plist */; };
+		5823A8832042204800E1BC37 /* ConnectionCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5823A8822042204800E1BC37 /* ConnectionCheck.swift */; };
+		582401772038B0FB006E87E9 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582401762038B0FB006E87E9 /* LocationManager.swift */; };
+		583BFADB2031FDCD00D1F18C /* ISPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583BFADA2031FDCD00D1F18C /* ISPoint.swift */; };
+		583BFADD2031FDF600D1F18C /* ISTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583BFADC2031FDF600D1F18C /* ISTimeline.swift */; };
+		585E61132020D3C400BFCD65 /* Viewer_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585E61122020D3C400BFCD65 /* Viewer_VC.swift */; };
+		585E61192020F6F600BFCD65 /* TLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585E61182020F6F600BFCD65 /* TLViewController.swift */; };
+		5879C8A3201F46820019A1A8 /* BLTE_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5879C8A2201F46820019A1A8 /* BLTE_TableViewCell.swift */; };
+		587B04882021F353005A638C /* History_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B04872021F353005A638C /* History_VC.swift */; };
+		587B048A2022027D005A638C /* Results_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B04892022027D005A638C /* Results_VC.swift */; };
+		587B4B1C201E2A9B007D94BC /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B4B1B201E2A9B007D94BC /* DataModel.swift */; };
+		587B4B1E201E3047007D94BC /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B4B1D201E3047007D94BC /* Functions.swift */; };
+		588E6B36201F6C740089C3A7 /* Process_Sensor_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E6B35201F6C740089C3A7 /* Process_Sensor_Data.swift */; };
+		58F51FF02025104F000A12F6 /* FireModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F51FEF2025104F000A12F6 /* FireModel.swift */; };
+		BEF7A6EEA011657747C1CE20 /* Pods_iVirtualCrit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78CA18074BB82F82FE1CCD07 /* Pods_iVirtualCrit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58101F05201E0F7900733F15 /* iVirtualCrit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iVirtualCrit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58101F08201E0F7900733F15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58101F0F201E0F7900733F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58101F11201E0F7900733F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58101F14201E0F7900733F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58101F16201E0F7900733F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58101F1E201E10DA00733F15 /* Bluetooth_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth_VC.swift; sourceTree = "<group>"; };
+		58101F24201E14AC00733F15 /* Starter_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starter_VC.swift; sourceTree = "<group>"; };
+		58216CF020250B8F00DDE028 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5823A8822042204800E1BC37 /* ConnectionCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionCheck.swift; sourceTree = "<group>"; };
+		582401762038B0FB006E87E9 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		583BFADA2031FDCD00D1F18C /* ISPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISPoint.swift; sourceTree = "<group>"; };
+		583BFADC2031FDF600D1F18C /* ISTimeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISTimeline.swift; sourceTree = "<group>"; };
+		585E61122020D3C400BFCD65 /* Viewer_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewer_VC.swift; sourceTree = "<group>"; };
+		585E61182020F6F600BFCD65 /* TLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLViewController.swift; sourceTree = "<group>"; };
+		5879C8A2201F46820019A1A8 /* BLTE_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLTE_TableViewCell.swift; sourceTree = "<group>"; };
+		587B04872021F353005A638C /* History_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History_VC.swift; sourceTree = "<group>"; };
+		587B04892022027D005A638C /* Results_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results_VC.swift; sourceTree = "<group>"; };
+		587B4B1B201E2A9B007D94BC /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		587B4B1D201E3047007D94BC /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		588E6B35201F6C740089C3A7 /* Process_Sensor_Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Process_Sensor_Data.swift; sourceTree = "<group>"; };
+		58F51FEF2025104F000A12F6 /* FireModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireModel.swift; sourceTree = "<group>"; };
+		78CA18074BB82F82FE1CCD07 /* Pods_iVirtualCrit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iVirtualCrit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE01321DE1D0FAC62CD042BC /* Pods-iVirtualCrit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iVirtualCrit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iVirtualCrit/Pods-iVirtualCrit.debug.xcconfig"; sourceTree = "<group>"; };
+		EB00791A0AE0B1C618BD94D8 /* Pods-iVirtualCrit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iVirtualCrit.release.xcconfig"; path = "Pods/Target Support Files/Pods-iVirtualCrit/Pods-iVirtualCrit.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58101F02201E0F7900733F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF7A6EEA011657747C1CE20 /* Pods_iVirtualCrit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58101EFC201E0F7900733F15 = {
+			isa = PBXGroup;
+			children = (
+				58101F07201E0F7900733F15 /* iVirtualCrit */,
+				58101F06201E0F7900733F15 /* Products */,
+				A24849C108A71482E369C09C /* Pods */,
+				D25995ADFC9BD07E307CDAE0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		58101F06201E0F7900733F15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58101F05201E0F7900733F15 /* iVirtualCrit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58101F07201E0F7900733F15 /* iVirtualCrit */ = {
+			isa = PBXGroup;
+			children = (
+				58101F0E201E0F7900733F15 /* Main.storyboard */,
+				587B04892022027D005A638C /* Results_VC.swift */,
+				587B04872021F353005A638C /* History_VC.swift */,
+				583BFADA2031FDCD00D1F18C /* ISPoint.swift */,
+				583BFADC2031FDF600D1F18C /* ISTimeline.swift */,
+				585E61182020F6F600BFCD65 /* TLViewController.swift */,
+				585E61122020D3C400BFCD65 /* Viewer_VC.swift */,
+				588E6B35201F6C740089C3A7 /* Process_Sensor_Data.swift */,
+				587B4B1B201E2A9B007D94BC /* DataModel.swift */,
+				587B4B1D201E3047007D94BC /* Functions.swift */,
+				58101F24201E14AC00733F15 /* Starter_VC.swift */,
+				5823A8822042204800E1BC37 /* ConnectionCheck.swift */,
+				582401762038B0FB006E87E9 /* LocationManager.swift */,
+				58101F1E201E10DA00733F15 /* Bluetooth_VC.swift */,
+				58101F11201E0F7900733F15 /* Assets.xcassets */,
+				58101F13201E0F7900733F15 /* LaunchScreen.storyboard */,
+				58101F08201E0F7900733F15 /* AppDelegate.swift */,
+				58F51FEF2025104F000A12F6 /* FireModel.swift */,
+				5879C8A2201F46820019A1A8 /* BLTE_TableViewCell.swift */,
+				58101F16201E0F7900733F15 /* Info.plist */,
+				58216CF020250B8F00DDE028 /* GoogleService-Info.plist */,
+			);
+			path = iVirtualCrit;
+			sourceTree = "<group>";
+		};
+		A24849C108A71482E369C09C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE01321DE1D0FAC62CD042BC /* Pods-iVirtualCrit.debug.xcconfig */,
+				EB00791A0AE0B1C618BD94D8 /* Pods-iVirtualCrit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D25995ADFC9BD07E307CDAE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78CA18074BB82F82FE1CCD07 /* Pods_iVirtualCrit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58101F04201E0F7900733F15 /* iVirtualCrit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58101F19201E0F7900733F15 /* Build configuration list for PBXNativeTarget "iVirtualCrit" */;
+			buildPhases = (
+				2C24F8A70264F76DFB38AB19 /* [CP] Check Pods Manifest.lock */,
+				58101F01201E0F7900733F15 /* Sources */,
+				58101F02201E0F7900733F15 /* Frameworks */,
+				58101F03201E0F7900733F15 /* Resources */,
+				39CD35A7FE3FB20E7B29EA87 /* [CP] Embed Pods Frameworks */,
+				D4A24E1D087B9AE2A19AF70A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iVirtualCrit;
+			productName = iVirtualCrit;
+			productReference = 58101F05201E0F7900733F15 /* iVirtualCrit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58101EFD201E0F7900733F15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = aaronep;
+				TargetAttributes = {
+					58101F04201E0F7900733F15 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 58101F00201E0F7900733F15 /* Build configuration list for PBXProject "iVirtualCrit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58101EFC201E0F7900733F15;
+			productRefGroup = 58101F06201E0F7900733F15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58101F04201E0F7900733F15 /* iVirtualCrit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58101F03201E0F7900733F15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58101F15201E0F7900733F15 /* LaunchScreen.storyboard in Resources */,
+				58216CF120250B8F00DDE028 /* GoogleService-Info.plist in Resources */,
+				58101F12201E0F7900733F15 /* Assets.xcassets in Resources */,
+				58101F10201E0F7900733F15 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C24F8A70264F76DFB38AB19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		39CD35A7FE3FB20E7B29EA87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iVirtualCrit/Pods-iVirtualCrit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4A24E1D087B9AE2A19AF70A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iVirtualCrit/Pods-iVirtualCrit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58101F01201E0F7900733F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58F51FF02025104F000A12F6 /* FireModel.swift in Sources */,
+				58101F1F201E10DA00733F15 /* Bluetooth_VC.swift in Sources */,
+				582401772038B0FB006E87E9 /* LocationManager.swift in Sources */,
+				587B4B1C201E2A9B007D94BC /* DataModel.swift in Sources */,
+				58101F25201E14AC00733F15 /* Starter_VC.swift in Sources */,
+				588E6B36201F6C740089C3A7 /* Process_Sensor_Data.swift in Sources */,
+				585E61132020D3C400BFCD65 /* Viewer_VC.swift in Sources */,
+				587B4B1E201E3047007D94BC /* Functions.swift in Sources */,
+				587B048A2022027D005A638C /* Results_VC.swift in Sources */,
+				583BFADD2031FDF600D1F18C /* ISTimeline.swift in Sources */,
+				585E61192020F6F600BFCD65 /* TLViewController.swift in Sources */,
+				587B04882021F353005A638C /* History_VC.swift in Sources */,
+				5879C8A3201F46820019A1A8 /* BLTE_TableViewCell.swift in Sources */,
+				583BFADB2031FDCD00D1F18C /* ISPoint.swift in Sources */,
+				5823A8832042204800E1BC37 /* ConnectionCheck.swift in Sources */,
+				58101F09201E0F7900733F15 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58101F0E201E0F7900733F15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58101F0F201E0F7900733F15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58101F13201E0F7900733F15 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58101F14201E0F7900733F15 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58101F17201E0F7900733F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		58101F18201E0F7900733F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58101F1A201E0F7900733F15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE01321DE1D0FAC62CD042BC /* Pods-iVirtualCrit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9483S2UTDX;
+				INFOPLIST_FILE = iVirtualCrit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaronep.iVirtualCrit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58101F1B201E0F7900733F15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB00791A0AE0B1C618BD94D8 /* Pods-iVirtualCrit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9483S2UTDX;
+				INFOPLIST_FILE = iVirtualCrit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaronep.iVirtualCrit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58101F00201E0F7900733F15 /* Build configuration list for PBXProject "iVirtualCrit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58101F17201E0F7900733F15 /* Debug */,
+				58101F18201E0F7900733F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58101F19201E0F7900733F15 /* Build configuration list for PBXNativeTarget "iVirtualCrit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58101F1A201E0F7900733F15 /* Debug */,
+				58101F1B201E0F7900733F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58101EFD201E0F7900733F15 /* Project object */;
+}

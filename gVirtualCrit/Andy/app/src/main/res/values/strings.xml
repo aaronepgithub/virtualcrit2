@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VIRTUAL CRIT IIx</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="speed">%s km/h</string>
+    <string name="title_leaderboard">Leaderboard</string>
+</resources>
