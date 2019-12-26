@@ -738,7 +738,10 @@ public class MainActivity extends AppCompatActivity  implements TextToSpeech.OnI
         // new user node would be /users/$userid/
         String userId = mDatabase.push().getKey();
         // creating user object
-        Round round = new Round(tim.getName(), tim.getRoundSpeed(), tim.getRoundHR(), tim.getRoundScore());
+
+        //DecimalFormat df = new DecimalFormat("#.00");
+        DecimalFormat df = new DecimalFormat("#.00");
+        Round round = new Round(tim.getName(), Double.valueOf(df.format(tim.getRoundSpeed())), Double.valueOf(df.format(tim.getRoundHR())), Double.valueOf(df.format(tim.getRoundScore())) );
         //Log.i(TAG, "writeToFB/ROUND SPEED:  " + tim.getRoundSpeed());
         //Log.i(TAG, "writeToFB/ROUND SCORE:  " + tim.getRoundScore());
         // pushing user to 'users' node using the userId
@@ -757,10 +760,11 @@ public class MainActivity extends AppCompatActivity  implements TextToSpeech.OnI
         String totalsURL = "totals/"+ tim.currentDate +"/" + tim.getName();
         DatabaseReference mDatabaseTotals = FirebaseDatabase.getInstance().getReference(totalsURL);
         //Log.i(TAG, "writeToFB/TOTAL:  " + tim.getTotalAvgSpeed());
-        DecimalFormat df = new DecimalFormat("#.###");
+
+//        DecimalFormat df = new DecimalFormat("#.00");
         //Double.valueOf(df.format(totalAverageScore));
 //        Total total = new Total(tim.getName(), totalAverageScore, tim.getTotalAvgSpeed());
-        Total total = new Total(tim.getName(), Double.valueOf(df.format(totalAverageScore)), tim.getTotalAvgSpeed());
+        Total total = new Total(tim.getName(), Double.valueOf(df.format(totalAverageScore)), Double.valueOf(df.format(tim.getTotalAvgSpeed()))  );
         mDatabaseTotals.setValue(total);
 
         //RUNNER FB WRITE TOTALS
